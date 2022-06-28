@@ -1,0 +1,20 @@
+# OUTPUT FILE FORMAT
+
+# TABLE COLUMNS
+| PHONE NUMBER | EMAIL ADDRESS | CONTACT NAME | DESTINATION | NUMBER OF PEOPLE | KOSHER | ADDITIONAL DETAILS |
+
+# INPUT FILE
+Input files are .csv documents containing a column named 'גוף', where each line
+holds the raw input of the "lead".
+The raw input comes at theses formats:
+ - Telecall system mails
+  |- Lead notice(Supported)
+  |- Interested notice(Supported)
+  |- General messages(Supported)
+  |- Customer-Support message (Supported)
+  |- Compressed message containing N number of lead notices (Not Supported, for now)
+ - Lead from webstie page (Supported)
+ - VirtualChat leads (Supported) - May require personal care for now
+ - Contact-Us form (Supported) - May require personal care for now
+ - Non Classefied forms, this should be added directly by content (Supported)
+ - {Disarmed} messages, should not be stored (Supported)
